@@ -1,0 +1,73 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+    font-size: larger;
+}
+
+.imagem {
+    background-image: url("./imgchurras.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario {
+    background-color: #F7CE68;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteudo input,
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.conteudo input:focus {
+    outline: none;
+
+}
+
+.conteudo button {
+    background-color: #f09b2c;
+
+}
+
+.conteudo button:hover {
+    background-color: #d67b03;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+li img {
+    margin-right: 15px;
+}
+
+@media (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
